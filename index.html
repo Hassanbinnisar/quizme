@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div class="quiz-box">
+    <h2 id="ques">Loading...</h2>
+    
+    <div class="options">
+      <label><input type="radio" name="answer" id="inp1" value="" onclick="btnWork()"/> <span id="opt1">Option 1</span></label>
+      <label><input type="radio" name="answer" id="inp2" value="" onclick="btnWork()"/> <span id="opt2">Option 2</span></label>
+      <label><input type="radio" name="answer" id="inp3" value="" onclick="btnWork()"/> <span id="opt3">Option 3</span></label>
+    </div>
+
+    <button id="btn" onclick="checkAnswer()" disabled>Next</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
